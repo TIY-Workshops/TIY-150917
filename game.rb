@@ -17,6 +17,7 @@
 # Explain the rules
 # Repeat the game
 
+choices = ["r","p","s"]
 
 puts "welcome to Rock Paper Scissors!!!"
 
@@ -26,12 +27,15 @@ name = gets.chomp
 print "Please make your choice r,p,s:"
 players_choice = gets.chomp
 
-computer_choice = "r"
+computer_choice_index = rand(3)
+computer_choice = choices[computer_choice_index]
+
+puts "The computer chose #{computer_choice}"
 
 if ("s" == players_choice)
 	puts "Computer wins!"
 elsif ("p" == players_choice)
-	puts "Player wins!!!!!! woot!!!!"
+	puts "#{name} wins!!!!!!"
 else
 	puts "Draw!!!!!"
 end
