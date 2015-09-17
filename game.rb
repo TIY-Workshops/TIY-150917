@@ -32,7 +32,7 @@ computer_choice = choices[computer_choice_index]
 
 puts "The computer chose #{computer_choice}"
 
-if ("s" == players_choice)
+if (computer_choice == "r" && players_choice == "s")
 	puts "Computer wins!"
 elsif ("p" == players_choice)
 	puts "#{name} wins!!!!!!"
